@@ -28,7 +28,7 @@ class Repository(object):
     def __new__(cls, account, reqtype):
         """
         :param account: :class:`Account`
-        :param regtype: 'remote', 'local', or 'status'"""
+        :param reqtype: 'remote', 'local', or 'status'"""
 
         if reqtype == 'remote':
             name = account.getconf('remoterepository')
